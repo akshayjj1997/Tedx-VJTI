@@ -1,0 +1,44 @@
+	.navtop {
+    .navigation {
+		width: 100%;
+		position: fixed;
+		z-index: 3;
+		#navbarSupportedContent {
+			li {
+				margin-left: 12px;
+				margin-right: 24px;
+				.active {
+					font-weight: bold;
+				}
+			}
+			a {
+				position: relative;
+				text-decoration: none;
+			}
+			a:after,
+			a.active:after {
+				content: '';
+				position: absolute;
+				z-index: 1;
+				bottom: 0.2em;
+				left: 0;
+				width: 0;
+				height: 2px;
+				background: #757575;
+				transition: width 0.45s ease;
+			}
+			a:hover:after {
+				width: 100%;
+			}
+			a.active:after {
+				width: 100% !important;
+			}
+			a.active {
+				color: #616161;
+			}
+		}
+		.bg-light {
+			background-color: #ffffff !important;
+		}
+  }
+}

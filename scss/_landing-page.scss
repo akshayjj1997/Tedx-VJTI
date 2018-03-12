@@ -1,0 +1,110 @@
+.landing-page {
+	height: 100vh;
+	overflow: hidden;
+	.navigation {
+		width: 100%;
+		position: fixed;
+		z-index: 3;
+		#navbarSupportedContent {
+			li {
+				margin-left: 12px;
+				margin-right: 24px;
+			}
+			a {
+				position: relative;
+				text-decoration: none;
+				font-weight: bolder;
+			}
+			a:after,
+			a.active:after {
+				content: '';
+				position: absolute;
+				z-index: 1;
+				bottom: 0.2em;
+				left: 0;
+				width: 0;
+				height: 2px;
+				background: #757575;
+				transition: width 0.45s ease;
+			}
+			a:hover:after {
+				width: 100%;
+			}
+			a.active:after {
+				width: 100% !important;
+			}
+			a.active {
+				color: #616161;
+			}
+		}
+		.bg-light {
+			background-color: #ffffff !important;
+		}
+	}
+	.background-img {
+		width: 100%;
+	}
+	.card {
+		position: absolute;
+		background: transparent;
+		top: 32%;
+		left: 10%;
+		border: none;
+		.moving-text {
+			position: relative;
+			font-weight: 600;
+			font-size: 3em;
+			color: #fff;
+			.text {
+				position: absolute;
+				width: 600px;
+				margin: auto;
+				left: 0;
+				top: 0.3em;
+				opacity: 0;
+				min-width: 100%;
+			}
+		}
+	}
+	#video {
+		position: absolute;
+		display: block;
+		top: 49%;
+		left: 75%;
+		transform: translate(-50%, -50%);
+		.round-button {
+			display: block;
+			width: 80px;
+			height: 80px;
+			line-height: 80px;
+			border: 4px solid #f5f5f5;
+			border-radius: 50%;
+			color: #f5f5f5;
+			text-align: center;
+			text-decoration: none;
+			background: transparent;
+			box-shadow: 0 0 3px gray;
+			transition: all 0.3s ease-in-out;
+			.material-icons {
+				cursor: pointer;
+				color: white;
+				transform: translate(0px, 12px);
+				font-size: 48px;
+			}
+		}
+		.round-button:hover {
+			background: #424242;
+			transform: scale(1.1);
+			transition: all 0.4s ease-in-out;
+		}
+	}
+	#myDIV {
+		width: 500px;
+		position: absolute;
+		top: 50%;
+		left: 75%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		display: none;
+	}
+}
