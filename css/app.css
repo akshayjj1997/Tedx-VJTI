@@ -758,14 +758,19 @@
     background-color: #ffffff !important; }
 
 .container {
-  margin-bottom: 2rem; }
-  .container img {
-    max-width: 300px;
-    height: 100%; }
+  margin-bottom: -3rem; }
+  .container .image-div {
+    margin-bottom: 5rem;
+    display: inline-block; }
+    .container .image-div img {
+      max-width: 300px;
+      zoom: 0.8;
+      vertical-align: middle; }
   @media only screen and (max-width: 992px) {
-    .container img {
-      max-width: 250px;
-      height: 100%; } }
+    .container .image-div {
+      margin-bottom: 2rem; }
+      .container .image-div img {
+        max-width: 250px; } }
   .container .image-wrapper {
     height: 200px;
     padding-top: 20px;
@@ -819,8 +824,9 @@ hr.colored {
   margin-left: -40px;
   margin-right: -40px; }
 
-.our-team .team-wrap {
-  padding: 0 40px; }
+.our-team, .team-wrap {
+  padding: 0 40px;
+  margin-bottom: 3.5rem; }
 
 .our-team .container-fluid {
   padding: 0 50px; }
@@ -905,6 +911,9 @@ hr.colored {
 .socials a:hover i {
   background-color: #f0f0f0; }
 
+@media only screen and (max-width: 768px) {
+  .team-wrap {
+    zoom: 0.9; } }
 .footer {
   width: 100%;
   background: rgba(0, 0, 0, 0.8);
