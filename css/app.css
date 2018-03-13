@@ -659,38 +659,6 @@
           width: 40%; }
     .work-with-us .partition-div.background-red .partition-text button {
       width: 40%; } }
-.navtop .navigation {
-  width: 100%;
-  position: fixed;
-  z-index: 3; }
-  .navtop .navigation #navbarSupportedContent li {
-    margin-left: 12px;
-    margin-right: 24px; }
-    .navtop .navigation #navbarSupportedContent li .active {
-      font-weight: bold; }
-  .navtop .navigation #navbarSupportedContent a {
-    position: relative;
-    text-decoration: none; }
-  .navtop .navigation #navbarSupportedContent a:after,
-  .navtop .navigation #navbarSupportedContent a.active:after {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    bottom: 0.2em;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: #757575;
-    transition: width 0.45s ease; }
-  .navtop .navigation #navbarSupportedContent a:hover:after {
-    width: 100%; }
-  .navtop .navigation #navbarSupportedContent a.active:after {
-    width: 100% !important; }
-  .navtop .navigation #navbarSupportedContent a.active {
-    color: #616161; }
-  .navtop .navigation .bg-light {
-    background-color: #ffffff !important; }
-
 .navigation {
   width: 100%;
   z-index: 1; }
