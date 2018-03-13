@@ -18,41 +18,43 @@
 
     <video autoplay loop muted poster="uc.jpg" id="background">
       <source src="ezgif.com-video-cutter.mp4" type="video/mp4">
-      <!--<source src="http://i.istockimg.com/video_passthrough/60458542/153/60458542.mp4" type="video/mp4">-->
     </video>
 
     <div class="main">
 
       <div class="navigation">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="index.html">
+          <a class="sidenav-menu" onclick="sliderTrue()">
+            <i class="material-icons">menu</i>
+          </a>
+          <a class="navbar-brand" href="./index.html">
             <img src="img/TEDx VJTI logo.jpeg" width="200" height="48" alt="">
           </a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link active" href="index.html">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">
                   Home
                   <span class="sr-only">(current)</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="comingsoonEvents.html">
+                <a class="nav-link" href="./comingsoonEvents.html">
                   Events
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="comingsoon.html">
+                <a class="nav-link active" href="">
                   Speakers
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="sponsors.html">
+                <a class="nav-link" href="./sponsors.html">
                   Partners
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="team.html">
+                <a class="nav-link" href="./team.html">
                   Our Team
                 </a>
               </li>
@@ -61,70 +63,57 @@
         </nav>
       </div>
 
+      <div class="sidenav-slider">
+        <a class="navbar-brand" href="./index.html">
+          <img src="img/TEDx VJTI logo.jpeg" width="200" height="48" alt="">
+        </a>
+        <ul>
+          <li>
+            <a href="./index.html">
+              <i class="material-icons">home</i>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="./comingsoonEvents.html">
+              <i class="material-icons">event</i>
+              Events
+            </a>
+          </li>
+          <li>
+            <a href=""  class="active">
+              <i class="material-icons">person</i>
+              Speakers
+            </a>
+          </li>
+          <li>
+            <a href="./sponsors.html">
+              <i class="material-icons">zoom_out_map</i>
+              Sponsors
+            </a>
+          </li>
+          <li>
+            <a href="./team.html">
+              <i class="material-icons">mood</i>
+              Our Team
+            </a>
+          </li>
+        </ul>
+      </div>
+
       <div id='content'>
         <div class='title'>
-          <span style="font-family:roboto">SPEAKERS</span>
-          <span style="font-size:70px; font-family: 'Montserrat', sans-serif;">Coming soon</span>
-        </div>
-
-        <!-- <section>
-            <ul id="countdown">
-              <li>
-                <h1 class="days timenumbers">03</h1>
-                <p class="timeRefDays timedescription">days</p>
-              </li>
-              <li>
-                <span class="hours timenumbers">00</span>
-                <p class="timeRefHours timedescription">hours</p>
-              </li>
-              <li>
-                <span class="minutes timenumbers">00</span>
-                <p class="timeRefMinutes timedescription">minutes</p>
-              </li>
-              <li>
-                <span class="seconds timenumbers yellow-text">00</span>
-                <p class="timeRefSeconds timedescription">seconds</p>
-              </li>
-            </ul>
-          </section> -->
-
-
-
-        <!-- <footer class="page-footer" style="margin-bottom:0%">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm col-1">
-            <span class="span-1">
-              <p>&copy; 2018 TEDx VJTI</p>
-            </span>
-          </div>
-          <div class="col-sm col-2">
-            <span class="span-2">
-              <p>Made with &nbsp;
-                <i class="material-icons">favorite</i> &nbsp; design team</p>
-            </span>
-          </div>
-          <div class="col-sm col-3">
-            <span class="span-3">
-              <a href="index.html">Home</a>
-              &nbsp; &nbsp;
-              <a href="comingsoonEvents.html">Events</a>
-              &nbsp; &nbsp;
-              <a href="comingsoon.html">Speakers</a>
-              &nbsp; &nbsp;
-              <a href="sponsors.html">Partners</a>
-              &nbsp; &nbsp;
-              <a href="team1.html">Our Team</a>
-            </span>
-          </div>
+          <span style="font-family:'Montserrat'">SPEAKERS</span>
+          <span style="font-size:70px;font-family:'Montserrat'">Coming soon</span>
         </div>
       </div>
-    </footer> -->
 
-      </div>
+    </div>
 
-      <script src='https://codepen.io/assets/libs/fullpage/jquery.js'></script>
-      <script src="js/comingsoonindex.js"></script>
+    </div>
+
+    <script src='https://codepen.io/assets/libs/fullpage/jquery.js'></script>
+    <script src="js/comingsoonindex.js"></script>
 
 </body>
 

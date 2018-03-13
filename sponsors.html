@@ -19,40 +19,84 @@
 
   <div class="navigation">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">
+      <a class="sidenav-menu" onclick="sliderTrue()">
+        <i class="material-icons">menu</i>
+      </a>
+      <a class="navbar-brand" href="./index.html">
         <img src="img/TEDx VJTI logo.jpeg" width="200" height="48" alt="">
       </a>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link active" href="index.html">
+            <a class="nav-link" href="./index.html">
               Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="comingsoon.html">
+            <a class="nav-link" href="./comingsoonEvents.html">
               Events
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="comingsoon.html">
+            <a class="nav-link" href="./comingsoon.html">
               Speakers
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="sponsors.html">
+            <a class="nav-link active" href="">
               Partners
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="team.html">
+            <a class="nav-link" href="./team.html">
               Our Team
             </a>
           </li>
         </ul>
       </div>
     </nav>
+  </div>
+
+  <div class="sidenav-slider">
+    <a class="navbar-brand" href="./index.html">
+      <img src="img/TEDx VJTI logo.jpeg" width="200" height="48" alt="">
+    </a>
+    <ul>
+      <li>
+        <a href="./index.html">
+          <i class="material-icons">home</i>
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="./comingsoonEvents.html">
+          <i class="material-icons">event</i>
+          Events
+        </a>
+      </li>
+      <li>
+        <a href="./comingsoon.html">
+          <i class="material-icons">person</i>
+          Speakers
+        </a>
+      </li>
+      <li>
+        <a href="" class="active">
+          <i class="material-icons">zoom_out_map</i>
+          Sponsors
+        </a>
+      </li>
+      <li>
+        <a href="./team.html">
+          <i class="material-icons">mood</i>
+          Our Team
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="opacity-div" onclick="sliderFalse()">
   </div>
 
   <div class="container">
@@ -115,24 +159,35 @@
     <div class="span-2 col-lg-4 col-md-4 col-sm-6 col-sm-6">
       <p>Made with &nbsp;
         <i class="material-icons">favorite</i> &nbsp; Design Team</p>
-      </div>
+    </div>
     <div class="span-3 col-lg-4 col-md-4 col-sm-12 col-sm-12">
       <div>
-        <span><a href="index.html">Home</a></span>
-        <span><a href="comingsoonEvents.html">Events</a></span>
-        <span><a href="comingsoon.html">Speakers</a></span>
-        <span><a href="sponsors.html">Partners</a></span>
-        <span><a href="team.html" class="link-team">Our Team</a></span>        
+        <span>
+          <a href="./index.html">Home</a>
+        </span>
+        <span>
+          <a href="./comingsoonEvents.html">Events</a>
+        </span>
+        <span>
+          <a href="./comingsoon.html">Speakers</a>
+        </span>
+        <span>
+          <a href="">Partners</a>
+        </span>
+        <span>
+          <a href="./team.html" class="link-team">Our Team</a>
+        </span>
       </div>
     </div>
   </div>
-  
+
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
   <script src="js/bootstrap/bootstrap.min.js"></script>
-  <script src="https://use.fontawesome.com/b90386a39a.js"></script>
+  <script src="https://use.fontawesome.com/b90386a39a.js"></script> 
+  <script src="js/scripts/slider.js"></script>
 
 </body>
 
