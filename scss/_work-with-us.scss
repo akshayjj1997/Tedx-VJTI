@@ -1,76 +1,85 @@
 .work-with-us {
+  background: url('../img/workplace.jpg') 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  margin-top: 32px;
+  margin-bottom: 0px;
+  .partition-div {
     position: relative;
     height: 600px;
-    background: url('../img/workplace.jpg') 100%;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    margin-top: 32px;
-    .tilted-left {
-        position: absolute;
-        height: 1800px;
-        width: 1000px;
-        background: rgba(0, 0, 0, 0.8);
-        transform: rotate(70deg);
-        top: -400px;
-        left: -670px;
+    .partition-text {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      h1 {
+        color: white;
+        font-size: 2rem;
+        display: block;
+        margin-bottom: 32px;
+      }
+      button {
+        border-radius: 10px;
+        height: 2.2rem;
+        width: 20%;
+        border: 1.5px solid #505040;
+        outline: none;
+        cursor: pointer;
+        font-weight: bold;
+        color: white;
+        background: rgb(217, 30, 24);
+        border-color: rgb(217, 30, 24);
+      }
+    }
+  }
+  .partition-div.background-black {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  .partition-div.background-red {
+    background: rgba(255, 0, 0, 0.8);
+    .partition-text {
+      button {
+        border-radius: 10px;
+        height: 2.2rem;
+        width: 20%;
+        border: 1.5px solid #505040;
+        outline: none;
+        cursor: pointer;
+        font-weight: bold;
+        color: black;
+        background: rgb(255, 255, 255);
+        border-color: rgb(255, 255, 255);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:767px) {
+  .work-with-us {
+    margin-top: 12px;
+    margin-bottom: 0px;
+    .partition-div {
+      position: relative;
+      height: 360px;
+      .partition-text {
+        padding: 0 48px;
         h1 {
-            position: absolute;
-            transform: rotate(-70deg);
-            color: white;
-            left: 256px;
-            top: 280px;
-            font-size: 1.5rem;
+          font-size: 1.8rem;
+          margin-bottom: 28px;
         }
         button {
-            position: absolute;
-            transform: rotate(-70deg);
-            left: 420px;
-            top: 311px;
-            border-radius: 10px;
-            height: 2.2rem;
-            width: 20%;
-            border: 1.5px solid #505040;
-            outline: none;
-            cursor: pointer;
-            background: inherit;
-            font-weight: bold;
-            color: white;
-            background: rgb(217, 30, 24);
-            border-color: rgb(217, 30, 24);
+          width: 40%;
         }
+      }
     }
-    .tilted-right {
-        position: absolute;
-        height: 1800px;
-        width: 1000px;
-        background: rgba(255, 0, 0, 0.8);
-        transform: rotate(70deg);
-        top: -750px;
-        left: 428px;
-        h1 {
-            position: absolute;
-            transform: rotate(-70deg);
-            top: 1473px;
-            left: 200px;
-            color: white;
-            font-size: 1.5rem;
-        }
+    .partition-div.background-red {
+      .partition-text {
         button {
-            position: absolute;
-            transform: rotate(-70deg);
-            left: 364px;
-            top: 1500px;
-            border-radius: 10px;
-            height: 2.2rem;
-            width: 20%;
-            border: 1.5px solid #505040;
-            outline: none;
-            cursor: pointer;
-            background: inherit;
-            font-weight: bold;
-            color: black;
-            background: rgb(255, 255, 255);
-            border-color: rgb(255, 255, 255);
+          width: 40%;
         }
+      }
     }
+  }
 }

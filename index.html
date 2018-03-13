@@ -21,6 +21,9 @@
 
     <div class="navigation">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="sidenav-menu" onclick="sliderTrue()">
+          <i class="material-icons">menu</i>
+        </a>
         <a class="navbar-brand" href="#">
           <img src="img/TEDx VJTI logo.jpeg" width="200" height="48" alt="">
         </a>
@@ -59,84 +62,138 @@
 
     <div class="background-img">
       <img src="img/back5.jpg" class="img-fluid" alt="Responsive image">
-    </div>
-
-    <div class="card">
-      <h1 class="moving-text">
-        <span class="text text-1">Do schools kill creativity ?</span>
-        <span class="text text-2">How great leaders inspire action!</span>
-        <span class="text text-3">Inside the mind of a master procrastinator!</span>
-      </h1>
-    </div>
-
-    <div id="video" video-url="https://www.youtube.com/embed/lmyZMtPVodo" onclick="myFunction()">
-      <span class="SPAN">
-        <a class="round-button">
-          <i class="material-icons">play_arrow</i>
-        </a>
-      </span>
-    </div>
-
-    <div id="myDIV">
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="" allowfullscreen></iframe>
+      <div class="card">
+        <h1 class="moving-text">
+          <span class="text text-1">Do schools kill creativity ?</span>
+          <span class="text text-2">How great leaders inspire action ?</span>
+          <span class="text text-3">Why we do what we do ?</span>
+        </h1>
+      </div>
+      <div id="video" video-url="https://www.youtube.com/embed/lmyZMtPVodo" onclick="myFunction()">
+        <span class="SPAN">
+          <a class="round-button">
+            <i class="material-icons">play_arrow</i>
+          </a>
+        </span>
+      </div>
+      <div id="myDIV">
+        <div class="embed-responsive embed-responsive-16by9" style="height:100%">
+          <iframe class="embed-responsive-item" src="" allowfullscreen></iframe>
+        </div>
       </div>
     </div>
+  </div>
 
+  <div class="sidenav-slider">
+    <a class="navbar-brand" href="#">
+      <img src="img/TEDx VJTI logo.jpeg" width="200" height="48" alt="">
+    </a>
+    <ul>
+      <li>
+        <a href="" class="active">
+          <i class="material-icons">home</i>
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="./comingsoonEvents.html">
+          <i class="material-icons">event</i>
+          Events
+        </a>
+      </li>
+      <li>
+        <a href="./comingsoon.html">
+          <i class="material-icons">person</i>
+          Speakers
+        </a>
+      </li>
+      <li>
+        <a href="./sponsors.html">
+          <i class="material-icons">zoom_out_map</i>
+          Sponsors
+        </a>
+      </li>
+      <li>
+        <a href="./team.html">
+          <i class="material-icons">mood</i>
+          Our Team
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="opacity-div" onclick="sliderFalse()">
   </div>
 
   <div class="about-us">
     <p class="title"> About Us</p>
     <hr>
-    <div class="cards-div-v">
-      <div class="card" style="border-color:rgb(217, 30, 24)">
-        <p class="card-title">What is TED?</p>
-        <p class="card-body">TED is a nonprofit devoted to Ideas Worth Spreading. It started out (in 1984) as a conference bringing together people
-          from three worlds: Technology, Entertainment, Design. Since then its scope has become ever broader.
-        </p>
-      </div>
-      <div class="card" style="border-color:#C95BB1">
-        <p class="card-title">Philosophy</p>
-        <p class="card-body">We believe passionately in the power of ideas to change attitudes, lives and ultimately, the world. So we’re building
-          here a clearinghouse that offers free knowledge and inspiration from the world’s most inspired thinkers, and also
-          a community of curious souls to engage with ideas and each other.
-        </p>
-      </div>
-      <div class="card" style="border-color:#67BA68">
-        <p class="card-title">Community</p>
-        <p class="card-body">The TEDxGateway community is a diverse one, both ethnically and socially. Our organisers, fellows, team members and
-          speakers all coalesce into one large, wondrous amalgamation of brilliant ideas and thoughts. We work with, and
-          around our speakers, and aim to cultivate their work through support and collaboration.
-        </p>
-      </div>
-      <div class="card" style="border-color:#27B7F6">
-        <p class="card-title">TEDxVJTI</p>
-        <p class="card-body">TEDxVJTI is an independently organised TED event operated under license from TED. At the day long conference we will
-          feature eminent speakers from different walks of life will share unique ideas from India and all around the globe.
-        </p>
+    <div class="row cards-div-v">
+      <div class="col-12 offset-0 col-lg-12 offset-lg-0">
+        <div class="row">
+          <div class="col-12 col-lg-3">
+            <div class="card" style="border-color:rgb(217, 30, 24)">
+              <p class="card-title">What is TED?</p>
+              <p class="card-body">TED is a nonprofit devoted to Ideas Worth Spreading. It started out (in 1984) as a conference bringing together
+                people from three worlds: Technology, Entertainment, Design. Since then its scope has become ever broader.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3">
+            <div class="card" style="border-color:#C95BB1">
+              <p class="card-title">Philosophy</p>
+              <p class="card-body">We believe passionately in the power of ideas to change attitudes, lives and ultimately, the world. So we’re
+                building here a clearinghouse that offers free knowledge and inspiration from the world’s most inspired thinkers,
+                and also a community of curious souls to engage with ideas and each other.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3">
+            <div class="card" style="border-color:#67BA68">
+              <p class="card-title">Community</p>
+              <p class="card-body">The TEDxGateway community is a diverse one, both ethnically and socially. Our organisers, fellows, team members
+                and speakers all coalesce into one large, wondrous amalgamation of brilliant ideas and thoughts. We work
+                with, and around our speakers, and aim to cultivate their work through support and collaboration.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3">
+            <div class="card" style="border-color:#27B7F6">
+              <p class="card-title">TEDxVJTI</p>
+              <p class="card-body">TEDxVJTI is an independently organised TED event operated under license from TED. At the day long conference
+                we will feature eminent speakers from different walks of life will share unique ideas from India and all
+                around the globe.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
   <div class="work-with-us">
     <div class="row">
-      <div class="col">
-        <div class="tilted-left">
-          <h1>Work with us to create a better tomorrow</h1>
-          <button>Join</button>
+      <div class="col-12 col-lg-6" style="padding:0">
+        <div class="partition-div background-black">
+          <div class="partition-text">
+            <h1>Work with us to create a better tomorrow</h1>
+            <button>Join</button>
+          </div>
         </div>
       </div>
-      <div class="col">
-        <div class="tilted-right">
-          <h1>Register as a speaker and inspire millions</h1>
-          <button>Register</button>
+      <div class="col-12 col-lg-6" style="padding:0">
+        <div class="partition-div background-red">
+          <div class="partition-text">
+            <h1>Register as a speaker and inspire millions</h1>
+            <button>Register</button>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
   <div class="faq">
-    <div class="container">
+    <div class="container col-lg-8 col-md-8 col-sm-12">
       <p class="title">Frequently Asked Questions</p>
       <hr/>
       <div class="accordion">
@@ -172,11 +229,11 @@
   </div>
 
   <div class="contact-us">
-    <div class="col-10 parent" style="margin:auto">
+    <div class="col-lg-10 col-md-10 col-sm-12 parent" style="margin:auto">
       <p class="title">Contact Us</p>
       <hr/>
       <div class="row">
-        <div class="col-6 card-form">
+        <div class="col-lg-6 col-md-6 col-sm-12 card-form">
           <div class="card-title">Leave a message</div>
           <div class="card-body">
             <form>
@@ -189,7 +246,7 @@
           </div>
         </div>
         <div class="headerDivider2"></div>
-        <div class="col-6 card-location">
+        <div class="col-lg-6 col-md-6 col-sm-12 card-location">
           <div class="card-body">
             <table>
               <tr>
@@ -244,22 +301,36 @@
     </div>
   </div>
 
-  <div class="footer">
-    <div class="span-1">
+
+  <div class="row footer">
+    <div class="span-1 col-lg-4 col-md-4 col-sm-6 col-sm-6">
       <p>&copy; 2018 TEDx VJTI</p>
     </div>
-    <div class="span-2">
+    <div class="span-2 col-lg-4 col-md-4 col-sm-6 col-sm-6">
       <p>Made with &nbsp;
         <i class="material-icons">favorite</i> &nbsp; Design Team</p>
     </div>
-    <div class="span-3">
-      <a href="index.html">Home</a>
-      <a href="comingsoonEvents.html">Events</a>
-      <a href="comingsoon.html">Speakers</a>
-      <a href="sponsors.html">Partners</a>
-      <a href="team.html" class="link-team">Our Team</a>
+    <div class="span-3 col-lg-4 col-md-4 col-sm-12 col-sm-12">
+      <div>
+        <span>
+          <a href="index.html">Home</a>
+        </span>
+        <span>
+          <a href="comingsoonEvents.html">Events</a>
+        </span>
+        <span>
+          <a href="comingsoon.html">Speakers</a>
+        </span>
+        <span>
+          <a href="sponsors.html">Partners</a>
+        </span>
+        <span>
+          <a href="team.html" class="link-team">Our Team</a>
+        </span>
+      </div>
     </div>
   </div>
+
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -273,7 +344,7 @@
   <script src="js/scripts/faq.js"></script>
   <script src="js/scripts/index.js"></script>
   <script src="js/scripts/comingsoonindex.js"></script>
-
+  <script src="js/scripts/slider.js"></script>
 
 </body>
 
