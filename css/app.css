@@ -968,5 +968,15 @@ hr.colored {
   .navigation .navbar-brand {
     position: relative;
     left: -15%; } }
+.events-page {
+  height: 100vh;
+  overflow: hidden; }
+  .events-page .background-image {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-image: url("../img/mic2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
 
 /*# sourceMappingURL=app.css.map */
