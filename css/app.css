@@ -983,15 +983,63 @@ hr.colored {
 
 .speakers-page {
   height: 100vh;
-  overflow: hidden; }
+  overflow-y: auto;
+  overflow-x: hidden; }
   .speakers-page .background-image {
     height: 100%;
     width: 100%;
     position: relative;
-    top: -60px;
-    z-index: -1;
     background-image: url("../img/speaker2.jpg");
     background-repeat: no-repeat;
     background-size: cover; }
+  .speakers-page .speakers-content h1 {
+    text-align: center;
+    padding: 40px 0 0px 0;
+    font-family: Roboto; }
+  .speakers-page .speakers-content .tagline {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 4rem;
+    font-size: 20px; }
+  .speakers-page .speakers-content .speakers-wrapper {
+    margin-bottom: 40px; }
+    .speakers-page .speakers-content .speakers-wrapper .speaker-container {
+      position: relative;
+      cursor: pointer;
+      height: 300px;
+      margin: 0 40px; }
+      .speakers-page .speakers-content .speakers-wrapper .speaker-container img {
+        width: 100%;
+        height: 100%; }
+      .speakers-page .speakers-content .speakers-wrapper .speaker-container .quote-container {
+        position: absolute;
+        background: transparent;
+        transition: all ease 0.3s;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }
+        .speakers-page .speakers-content .speakers-wrapper .speaker-container .quote-container p {
+          color: transparent;
+          font-size: 36px;
+          position: relative;
+          top: 10%;
+          left: 5%; }
+    .speakers-page .speakers-content .speakers-wrapper .speaker-container:hover .quote-container {
+      background: rgba(255, 0, 0, 0.801);
+      transition: all ease 0.3s; }
+      .speakers-page .speakers-content .speakers-wrapper .speaker-container:hover .quote-container p {
+        color: #fff; }
+    .speakers-page .speakers-content .speakers-wrapper .speaker-description p {
+      text-align: center;
+      font-style: italic; }
+    .speakers-page .speakers-content .speakers-wrapper .speaker-description .name {
+      margin-top: 20px;
+      font-size: 20px;
+      margin-bottom: 12px; }
+    .speakers-page .speakers-content .speakers-wrapper .speaker-description .job-title {
+      margin-top: 0px;
+      padding: 0 20px;
+      font-size: 16px; }
 
 /*# sourceMappingURL=app.css.map */
