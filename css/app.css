@@ -975,7 +975,22 @@ hr.colored {
     height: 100%;
     width: 100%;
     position: relative;
-    background-image: url("../img/mic2.jpg");
+    top: -60px;
+    z-index: -1;
+    background-image: url("../img/poster.png");
+    background-repeat: no-repeat;
+    background-size: cover; }
+
+.speakers-page {
+  height: 100vh;
+  overflow: hidden; }
+  .speakers-page .background-image {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: -60px;
+    z-index: -1;
+    background-image: url("../img/speaker2.jpg");
     background-repeat: no-repeat;
     background-size: cover; }
 
