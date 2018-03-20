@@ -19,7 +19,7 @@
     .tagline {
       text-align: center;
       font-style: italic;
-      margin-bottom: 4rem;
+      margin: 2.5rem;
       font-size: 20px;
     }
     .speakers-wrapper {
@@ -43,17 +43,20 @@
           height: 100%;
           p {
             color: transparent;
-            font-size: 36px;
+            font-size: 24px;
             position: relative;
             top: 10%;
-            left: 5%;
+            left: auto;
+            margin: 20px;
+            text-align: center;
+            font-family: 'Ubuntu', sans-serif;
           }
         }
       }
       .speaker-container:hover {
         .quote-container {
           background: rgba(255, 0, 0, 0.801);
-          transition: all ease 0.3s;
+          transition: all 0.3s ease-in-out;
           p {
             color: #fff;
           }

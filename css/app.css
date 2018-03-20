@@ -975,12 +975,16 @@ hr.colored {
     height: 100%;
     width: 100%;
     position: relative;
-    top: -60px;
+    top: -40px;
     z-index: -1;
-    background-image: url("../img/poster.png");
+    background-image: url("../img/poster.jpg");
     background-repeat: no-repeat;
     background-size: cover; }
 
+@media only screen and (max-width: 767px) {
+  .events-page .background-image {
+    background-image: url("../img/poster_m.jpg");
+    top: -48px; } }
 .speakers-page {
   height: 100vh;
   overflow-y: auto;
@@ -999,7 +1003,7 @@ hr.colored {
   .speakers-page .speakers-content .tagline {
     text-align: center;
     font-style: italic;
-    margin-bottom: 4rem;
+    margin: 2.5rem;
     font-size: 20px; }
   .speakers-page .speakers-content .speakers-wrapper {
     margin-bottom: 40px; }
@@ -1021,13 +1025,16 @@ hr.colored {
         height: 100%; }
         .speakers-page .speakers-content .speakers-wrapper .speaker-container .quote-container p {
           color: transparent;
-          font-size: 36px;
+          font-size: 24px;
           position: relative;
           top: 10%;
-          left: 5%; }
+          left: auto;
+          margin: 20px;
+          text-align: center;
+          font-family: 'Ubuntu', sans-serif; }
     .speakers-page .speakers-content .speakers-wrapper .speaker-container:hover .quote-container {
       background: rgba(255, 0, 0, 0.801);
-      transition: all ease 0.3s; }
+      transition: all 0.3s ease-in-out; }
       .speakers-page .speakers-content .speakers-wrapper .speaker-container:hover .quote-container p {
         color: #fff; }
     .speakers-page .speakers-content .speakers-wrapper .speaker-description p {
