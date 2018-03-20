@@ -989,13 +989,6 @@ hr.colored {
   height: 100vh;
   overflow-y: auto;
   overflow-x: hidden; }
-  .speakers-page .background-image {
-    height: 100%;
-    width: 100%;
-    position: relative;
-    background-image: url("../img/speaker2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; }
   .speakers-page .speakers-content h1 {
     text-align: center;
     padding: 40px 0 0px 0;
@@ -1010,7 +1003,7 @@ hr.colored {
     .speakers-page .speakers-content .speakers-wrapper .speaker-container {
       position: relative;
       cursor: pointer;
-      height: 300px;
+      height: 220px;
       margin: 0 40px; }
       .speakers-page .speakers-content .speakers-wrapper .speaker-container img {
         width: 100%;
@@ -1032,6 +1025,9 @@ hr.colored {
           margin: 20px;
           text-align: center;
           font-family: 'Ubuntu', sans-serif; }
+      @media (min-width: 768px) {
+        .speakers-page .speakers-content .speakers-wrapper .speaker-container {
+          height: 310px; } }
     .speakers-page .speakers-content .speakers-wrapper .speaker-container:hover .quote-container {
       background: rgba(255, 0, 0, 0.801);
       transition: all 0.3s ease-in-out; }
